@@ -8,7 +8,7 @@ const MAX_ATTEMPT = 6;
 
 function App() {
   // Mengambil satu kata random di wordList.json
-  const [currentWord, setCurrentWord] = useState(() => {
+  const [currentWord] = useState(() => {
     return words[Math.floor(Math.random() * words.length)];
   });
 
